@@ -38,12 +38,9 @@ let mostrarResultado = () => {
     input2.value = "";
     return;
   }
-  let palabrasN = 0;
-  listaPalabras.forEach((palabra) => {
-    if (palabra[0] == input2.value) {
-      palabrasN++;
-    }
-  });
+  let palabrasN = listaPalabras.filter(
+    (palabra) => palabra[0] == input2.value
+  ).length;
   let parrafo = document.getElementById("result");
   parrafo.innerHTML = `Hay ${palabrasN} palabras que empiezan con la letra ${input2.value}`;
   input2.value = "";
