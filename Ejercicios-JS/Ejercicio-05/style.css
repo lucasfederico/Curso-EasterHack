@@ -1,0 +1,17 @@
+body{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+}.containerTexto{
+    padding: 5px;
+    margin-top: 30px;
+    width: 50%;
+    height: 120px;
+    border: solid 1px black;
+    border-radius: 4px;
+}
+#btnNoShow{
+    display: none;
+}
