@@ -1,0 +1,23 @@
+*{
+    box-sizing: border-box;
+    margin: 0px;
+    padding: 0px;
+}
+main div{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    padding: 15px;
+    width: 400px;
+    height: 300px;
+    border: 1px solid black;
+}
+div img{
+    width: 70%;
+}
+main{
+    padding: 15px;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px 50px;
+}
