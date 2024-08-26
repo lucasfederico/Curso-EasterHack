@@ -1,0 +1,10 @@
+.container-form{
+    
+}
+.container-modal{
+    width: 45%;
+    height: 150px;
+    border: 1px solid black;
+    background-color: whitesmoke ;
+    padding: 5px 10px;
+}
