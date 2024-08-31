@@ -31,27 +31,47 @@ popup.addEventListener("click", () => {
 });
 
 function crearItem(tarea, i) {
+  let iconCategoria;
+  if (tarea.tipo == "personal") {
+    iconCategoria = "📝";
+    
+  }
+  else if(tarea.tipo == "trabajo"){
+    iconCategoria = "💼"
+  }
+  else if(tarea.tipo == "domestica"){
+    iconCategoria = "🏠";
+  }
+  else if(tarea.tipo == "deporte"){
+    iconCategoria = "⚽";
+  }
   return `<li><div class="div">
-                <h6>${tarea.titulo}</h6>
+                <p>${iconCategoria}</p>
             </div>
-          <div>
-            <p>${tarea.descripcion}</p>
-        </div>
-          <div>
-            <p>${tarea.tipo}</p>
-        </div>
+            <div class="div">
+              <p><b>${tarea.titulo}</b></p>
+            </div>
+            
         <button onclick="cerrar(${i})">X</button></li>`;
 }
 
 // Evento crear Tarea
 btn.addEventListener("click", () => {
-  let tarea = {
-    titulo: input1.value,
-    descripcion: input2.value,
-    tipo: input3.value,
-  };
-  listaTareas.push(tarea);
-  renderizar();
-  containerForm.style.display = "none";
-  containerTareas.style.display = "flex";
+  if (input1.value != "" && input2.value != "" && input3.value != "") {
+    let tarea = {
+      titulo: input1.value,
+      descripcion: input2.value,
+      tipo: input3.value,
+    };
+    listaTareas.push(tarea);
+    renderizar();
+    containerForm.style.display = "none";
+    containerTareas.style.display = "flex";
+  }
+  else{
+    alert("Complete los campos por favor.")
+  }
+  input1.value = "";
+  input2.value = "";
+  input3.value = "";
 });

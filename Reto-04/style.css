@@ -1,9 +1,11 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap');
 body{
+    font-family: "Open Sans", sans-serif;
     display: flex;
     flex-direction: column;
     align-items: center;
-    margin: 0;
-    padding: 0;
+    margin: 0px;
+    padding: 0px;
     background-color: white;
 }
 header{
@@ -12,7 +14,7 @@ header{
     display: flex;
     justify-content: center;
     align-items: center;
-    background-color: #512DA8;
+    background-color: #219EBC;
 }
 .container1{
     width: 100%;
@@ -32,14 +34,15 @@ header{
     font-size: 1.2rem;
     margin-top: 30px;
     width: 16em;
-    height: 40%;
     padding: 13px;
     display: flex;
     display: none;
     flex-direction: column ;
     border: solid 1px black;
 }
-
+.container-form h4{
+    margin: 0px;
+}
 /* estilo de item */
 ul{
     padding: 10px;
@@ -51,8 +54,10 @@ ul{
     gap: 20px;
 }
 ul li{
+    background-color: #caf0f8;
     display: flex;
     justify-content: space-between;
+    align-items: center;
     width: 100%;
     border: 2px solid black;
     border-radius: 5px;
