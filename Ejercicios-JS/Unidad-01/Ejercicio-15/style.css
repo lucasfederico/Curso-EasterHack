@@ -9,3 +9,80 @@ header{
 .nav-link{
     color: white;
 }
+.menu-horizontal li:hover .menu-vertical{
+    display: block;
+}
+.menu-vertical{
+    position: absolute;
+    display: none;
+    list-style: none;
+    background-color: rgba(0, 0, 0, .5);
+}
+
+.menu-vertical li a{
+    display: block;
+
+}
+
+/* SECCION PRINCIPAL */
+.section-principal{
+    height: 90vh;
+    background-image: url("https://img.uhdpaper.com/wallpaper/pokemon-ball-house-anime-digital-art-68@1@o");
+    background-size:  cover;
+    
+    width: 100%;
+    display: flex;
+}
+.section-principal-1{
+    width: 50%;
+    height: 100%;
+    color: ;
+}
+.section-principal-2{
+    width: 50%;
+    height: 100%;
+}
+
+/* // Seccion explicacion */
+.section-explain{
+    display: flex;
+    height: 50vh;
+    width: 100%;
+    background: rgb(2,0,36);
+    background: linear-gradient(90deg, rgba(2,0,36,1) 0%, rgba(9,9,121,1) 50%, rgba(255,255,255,1) 100%);
+}
+.section-explain-1{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 50%;
+    color: whitesmoke;
+}
+.section-explain-2{
+    display: flex;
+    justify-content: center;
+    width: 50%;
+}
+ 
+/* SECCION EXPLICACION 2 */
+.section-response{
+    width: 100%;
+    height: 50vh;
+    display: flex;
+    background: rgb(255,255,255);
+    background: linear-gradient(90deg, rgba(255,255,255,1) 0%, rgba(9,9,121,1) 50%, rgba(2,0,36,1) 100%);
+
+}
+.section-response-1{
+    display: flex;
+    justify-content: center;
+    width: 50%;
+}
+.section-response-2{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 50%      ;
+    color: white;
+    padding: 0px 130px;
+}

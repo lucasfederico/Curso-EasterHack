@@ -1,0 +1,47 @@
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+    background-color: black;
+}
+.contenedor{
+    gap: 1.2em;
+}
+.img{
+    cursor: zoom-in;
+}
+
+.popup{
+    display: none;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 800px;
+    height: 800px;
+    background-color: white;
+    border: 1px solid white;
+    border-radius: 4px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 2; 
+}
+.popup p{
+    align-self: end;
+    cursor: pointer;
+}
+.popup img{
+    width: 100%;
+    height: auto;
+}
+.overlay {
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5); /* Color negro semitransparente */
+    z-index: 1;
+}
